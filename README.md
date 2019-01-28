@@ -4,6 +4,30 @@ When running a pen-and-paper RPG campaign (like dnd) players can get stuck on sh
 
 ![](https://media.giphy.com/media/CIJsP7PsWvZM4/giphy.gif)
 
+# example
+
+```
+/status
+You are standing in the middle of 🏨 Tavern, with 99.0 gold in your pocket, and the following items in your backpack:
+nothing
+
+/where
+🏨 Tavern /go_1
+👨🏽‍🍳 Baker Barry /go_2
+🛠 Old Ironworks /go_3
+
+/go_3
+⚔️ Short Sword - 50 gold /buy_2
+ Suitable for most combat needs
+⚔️ Dagger - 40 gold /buy_3
+ Probably better in the kitchen than a fight
+
+/buy_2
+/status
+You are standing in the middle of 🛠 Old Ironworks, with 49.0 gold in your pocket, and the following items in your backpack:
+1x ⚔️ Short Sword
+```
+
 # what state must be tracked?
 
 - where is the player? in which shop?
@@ -38,6 +62,14 @@ A place like a shop or tavern. A location can sell things if it has a resident e
 
 Mention where the player currently is, their inventory and amount of money, and where they can go.
 
+### `/name [text]`
+
+Change the player's name.
+
+### `/say [text]`
+
+Send a message to other players in the same location (like the starting Tavern).
+
 ### `/where`
 
 List places of interest where the player can `/go` to.
@@ -45,7 +77,6 @@ List places of interest where the player can `/go` to.
 ### `/go [location_id]`
 
 Move a player between locations.
-
 
 ### `/buy [inventory_id]`
 
