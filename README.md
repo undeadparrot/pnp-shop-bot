@@ -1,5 +1,8 @@
 # pnp-shop-bot
-Bot for handling player shopping in a town
+
+When running a pen-and-paper RPG campaign (like dnd) players can get stuck on shopping in the town, which could be handled outside of sessions. So here is a bot you can configure to let players move around town and shop, with item descriptions, inventories, stock and prices.
+
+![](https://media.giphy.com/media/CIJsP7PsWvZM4/giphy.gif)
 
 # what state must be tracked?
 
